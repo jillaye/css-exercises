@@ -1,5 +1,11 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  /* THIS will center the text within each of the 
+  .text divs because of inheritance. Since I haven’t set 
+  text-align on .text itself, it inherits the center alignment
+  from the <body>. 
+*/
+  text-align: center;
 }
 
 img {
@@ -10,6 +16,17 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 32px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.item {
+  max-width: 200px;
 }
 
 /* do not edit this footer */
